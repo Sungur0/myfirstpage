@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Demo</title>
+</head>
+<body>
+  <h1>Forms Demo</h1>
+  <button>dışında</button>
+<form action="/food">
+
+  <label for="usarname">Kullanıcı Adı Giriniz:</label>
+  <input  placeholder="Kullanıcı Adı" id="usarname" name="isim">
+
+  
+  <label for="password">Şifrenizi Giriniz :</label>
+  <input type="password" placeholder="Şifrenizi Giriniz" id="password" name="password">
+<button>Gönder</button>
+ 
+    <label for="colors">Renk Seçiniz</label>
+    <input type="color" id="colors" name="color">
+  
+  <label for="number">Sayı Giriniz:</label>
+  <input type="number" placeholder="Sayı Giriniz" id="number">
+
+ 
+ <button>Submit
+ </button>
+  
+</form>
+<hr>
+
+<form action="https://www.reddit.com/search" target="_blank">
+<label for="search"></label>
+<input type="text" id="search" name="q">
+<button>Search Reddit</button>
+</form>
+<!-- Google'da arama yap -->
+<form action="https://www.google.com/search" target="_blank">
+<label for="search"></label>
+<input type="text" id="search" name="q" >
+<button>Search Google</button>
+
+</form>
+<!-- Youtube'da arama yap -->
+<form action="https://www.youtube.com/results" target="_blank">
+<label for="search  "></label>
+<input type="text" id="search" name="search_query">
+<button>Search Youtube</button>
+</form>
+
+<h2>Daha fazla input çeşiti</h2>
+
+<form action="/birds">
+<input type="checkbox" name="tos" id="agree">
+<label for="agree">Kabul Ediyorum</label>
+
+<p>
+  <label for="xs">Xs</label>
+  <input type="radio" name="size" id="xs" value="xs">
+  <label for="s">S</label>
+  <input type="radio" name="size" id="s" value="s">
+  <label for="m">M</label>
+  <input type="radio" name="size" id="m" value="m">
+</p>
+<p>
+  <label for="animal">Favori hayvanınızı seçiniz</label>
+  <select name="animal" id="animal">
+    <option value="fish">Balık</option>
+    <option value="dog">Köpek</option>
+    <option value="cat">Kedi</option>
+
+  </select>
+</p>
+
+<p><label for="cheese">Peynir Miktarı</label>
+<input type="range" name="cheese_level" id="cheese" min="1" max="10">
+
+</p>
+<p>
+<label for="note">Özel istek</label><br>
+<textarea name="not" id="note" cols="30" rows="10" placeholder="İsteklerinizi yazınız"></textarea>
+
+</p>
+<button>Gönder</button>
+</form>
+
+<h2>Validations</h2>
+
+<form action="/dummy">
+  <p>
+  <label for="first">İsim Giriniz</label>
+<input type="text" name="first" id="first" required minlength="3" maxlength="15">
+</p>
+<p>
+  <label for="">Url Giriniz</label>
+  <input type="url">
+</p>
+<label for="password">Şifrenizi Giriniz</label>
+<input type="text" name="password" id="password">
+<button>Submit</button>
+</form>
+
+
+
+  
+</body>
+</html>
